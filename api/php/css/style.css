@@ -1,0 +1,104 @@
+*{margin: 0; padding: 0;}
+main{
+    background-color: #ccc;
+    width: 95%;
+    margin: auto;
+}
+header{
+    outline: 2px solid black;
+    height: 130px;
+}
+h1{
+    font-size: 100px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background: rgb(34, 0, 255);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: aliceblue;
+}
+li{
+    margin: 5px;
+}
+h2{
+    text-align: center;
+
+}
+hr{
+    color: black;
+}
+table{border: 2px solid black;
+    width: 700px;
+    font-size: 30px;
+    margin: auto;
+}
+th{
+    border-bottom: 2px solid black;
+}
+td{
+    text-align: center;
+}
+p{
+    margin: 5px;
+}
+
+#topBar{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(34, 0, 255);
+}
+#topBar a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.cronograma{
+    width: 25%;
+    height: 100px;
+    background: aliceblue;
+    margin: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.grupo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.times{
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+
+
+/*--carousel--*/
+#carousel-container {
+    width: 1920 px;
+    overflow: hidden;
+    background-color: aqua;
+    height: 200px;
+  }
+
+  #carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-item {
+    width: 1920px;
+  }
+  .imagens{
+    width: 1920px;
+    height: 200px;
+    background: linear-gradient(90deg, blue, darkblue 60%, cyan);
+}
