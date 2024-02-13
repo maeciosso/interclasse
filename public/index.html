@@ -10,7 +10,7 @@
     <div id="phpResult"></div>
 
     <script>
-        fetch('/api/php/index.php')
+        fetch('../api/php/index.php')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('phpResult').innerHTML = data;
