@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.select{background-color: #338dc2;}
+
+/* Global styles for mobile */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #0073b7;
+}
+
+a:hover {
+  color: #004d7a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Header */
+header {
+  background-color: #0073b7;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+header h1 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+/* Menu */
+.secao-menu {
+  background-color: #f7f7f7;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.secao-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.secao-menu ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.secao-menu ul li a {
+  font-size: 18px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.secao-menu ul li a:hover {
+  background-color: #338dc2;
+  transition: 0.5s;
+}
+
+/* Main content */
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.esporte {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Change to 1 column for mobile */
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  text-align: center;
+  border: 1px solid #333;
+  width: 100%; /* Adapt width for mobile */
+  font-size: 16px;
+  margin: 20px auto;
+}
+
+th, td {
+  border-bottom: 1px solid #333;
+}
+
+.futebol, .volei, .handball, .basquete {
+  width: 100%; /* Adapt width for mobile */
+  height: 300px;
+  overflow: auto;
+  margin: 20px auto;
+  border: 2px solid rgba(0, 0, 0, 0.400);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.futebol:hover, .volei:hover, .handball:hover, .basquete:hover {
+  background-color: #33333317;
+  transition: 0.5s;
+}
+
+#grupo {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Change to 1 column for mobile */
+  width: fit-content;
+  margin: auto;
+}
+
+section {
+  width: fit-content;
+}
+
+section a {
+  margin: 10px;
+}
+
+section a button {
+  height: 30px;
+  width: 80px;
+  background-color: #338dc2;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+p {
+  text-align: center;
+}
+
+/* Media queries for larger screens */
+@media screen and (min-width: 1024px){
+  #grupo{grid-template-columns: repeat(4, 1fr); gap: 20px;}
+  .secao-menu ul {display: flex;}
+}
+@media screen and (max-width:820px){
+  #grupo{grid-template-columns: repeat(2, 1fr); gap: 20px;}
+  .secao-menu ul {display: flex;}
+}
+@media screen and (max-width:430px){
+  #grupo{grid-template-columns: 1fr; gap: 20px;}
+  .secao-menu ul{display: block;}
+}

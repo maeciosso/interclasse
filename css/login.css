@@ -1,0 +1,96 @@
+*{margin: 0; padding: 0;}
+body{background-color: azure;}
+main{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.411);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 20px;
+}
+label{
+    font-size: 25px;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{color: aliceblue;}
+form{
+    border-radius: 16px;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    border: none;
+    border-radius: 16px;
+    transition: .5S;
+}button:hover{
+    background-color: aquamarine;
+    color: aliceblue;
+}
+p{
+    color: rgb(182, 31, 31);
+    text-transform: capitalize;
+}
+input{
+    background-color: #3333335e;
+    border: none;
+    color: aliceblue;
+    padding: 5px;
+}
+button{
+    background: #337bc2;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+.topBar{
+    background: rgb(34, 0, 255);
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.login{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 1px;
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .login{width: 250px;font-size: 16px;}
+    button{width: 250px;}
+    form{width: 300px;}
+    main{width: 300px;}
+    svg{width: 450px;}
+}
+@media screen and (max-width: 425px) {
+    .login{width: 250px;font-size: 16px;}
+    button{width: 250px;}
+    form{width: 300px;}
+    main{width: 300px;}
+    svg{width: 235px;}
+    h1, label{color: antiquewhite;}
+}
+@media screen and (max-width: 375px) {
+    .login{width: 250px;font-size: 16px;}
+    button{width: 250px;}
+    form{width: 300px;}
+    main{width: 300px;}
+}

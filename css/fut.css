@@ -1,0 +1,101 @@
+/* Redefinição de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+  }
+  
+  /* Estilos globais */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0073b7;
+  }
+  
+  a:hover {
+    color: #004d7a;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos do header */
+  header {
+    background-color: #0073b7;
+    color: #fff;
+    padding: 15px 20px;
+    height: 130px;
+  }
+  
+  header h1 {
+    clear: both;
+    text-align: center;
+    margin-top: 0;
+    font-size: 24px;
+  }
+  header img{
+    float: right;
+    width: 40px;
+  }
+  header button{
+    float: right;
+    width: 80px;
+    font-size: 20px;
+    height: 30px;
+    background-color: #338dc2;
+    border-radius: 10px;
+  }
+
+  /*main*/
+  main{
+    width: 100%;
+
+  }
+  .futebol{
+    width: fit-content;
+    margin: 100px auto;
+    text-align: center;
+  }
+  .futebol div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+table{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+}
+th, td{
+    border-bottom: 1px solid #333;
+}
+p{
+  width: fit-content;
+  text-align: center;
+}
+.data{
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  outline: 2px solid red;
+}

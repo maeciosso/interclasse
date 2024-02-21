@@ -1,0 +1,122 @@
+/* Global styles (mobile-first) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #0073b7;
+}
+
+a:hover {
+  color: #004d7a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Header (mobile-first) */
+header {
+  background-color: #0073b7;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
+  clear: both;
+}
+section {
+  width: fit-content;
+}
+
+section a {
+  margin: 10px;
+}
+
+section a button {
+  height: 30px;
+  width: 80px;
+  background-color: #338dc2;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Menu (mobile-first) */
+.secao-menu {
+  background-color: #f7f7f7;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.secao-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.secao-menu ul li {
+  display: block; /* Stack menu items vertically on mobile */
+  margin-bottom: 20px; /* Add spacing between menu items */
+}
+
+.secao-menu ul li a {
+  font-size: 18px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  width: 100%; /* Fill full width on mobile */
+}
+
+.secao-menu ul li a:hover {
+  background-color: #338dc2;
+  transition: 0.5s;
+}
+
+/* Content (mobile-first) */
+.secao-conteudo {
+  padding: 30px 20px;
+  width: 100%;
+}
+
+/* Additional media queries for larger screens (optional) */
+@media (min-width: 768px) {
+  /* Styles for tablet and desktop layouts */
+
+  section {
+    width: 50%; /* Adjust section width if desired */
+    float: none; /* Remove float for responsive layout */
+    margin: 0 10px; /* Add margin for spacing */
+  }
+
+  .secao-menu ul li {
+    display: inline-block; /* Restore horizontal layout for larger screens */
+    margin-right: 20px;
+  }
+}

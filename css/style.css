@@ -1,0 +1,213 @@
+
+/* Redefinição de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #0073b7;
+}
+
+a:hover {
+  color: #004d7a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Estilos do header */
+header {
+  background-color: #0073b7;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  height: 140px;
+}
+
+header h1 {
+  font-size: 20px;
+  margin-top: 0;
+}
+header a #login{
+  width: 40px;
+  height: 40px;
+  float: right;
+}
+header #svg{
+  float: left;
+}
+footer{background-color: #0073b7;}
+
+/* Estilos da seção de destaque */
+.secao-destaque {
+  background-color: #f7f7f7;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.secao-destaque h2 {
+  font-size: 18px;
+}
+
+.secao-destaque p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.secao-destaque a {
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid #0073b7;
+  border-radius: 5px;
+  color: #0073b7;
+  text-decoration: none;
+}
+
+.secao-destaque a:hover {
+  background-color: #0073b7;
+  color: #fff;
+}
+
+/* Estilos da seção de times */
+.secao-times {
+  padding: 30px 20px;
+}
+
+.secao-times h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.secao-times ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.secao-times ul li {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+.secao-times ul li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.secao-times ul li a:hover {
+  background-color: #f7f7f7;
+}
+
+.secao-times ul li a h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* Estilos da seção de calendário */
+.secao-calendario {
+  padding: 30px 20px;
+}
+
+.secao-calendario h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.secao-calendario .table {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid #ddd;
+  overflow: auto;
+}
+
+.secao-calendario .table .cronograma {
+  border: 2px solid rgba(0, 0, 0, 0.404);
+  width: 95%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  border-radius: 10px;
+}
+.secao-calendario .table .cronograma p{
+  margin: 6px;
+}
+.img{
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
+}
+footer li a{
+  color: #fff;
+  padding: 0 10px;
+}
+footer p{color: #fff; padding: 0 10px;}
+footer p a{color: #fff; text-decoration: underline;}
+
+@media screen and (min-width: 1920px) {
+  .secao-calendario .table {grid-template-columns: 1fr 1fr 1fr 1fr;}
+  .secao-calendario .table .cronograma{width: 445px;}
+  .secao-times ul li {width: 450px;margin-bottom: 20px;}
+  .secao-times ul{justify-content:space-around;}
+  .secao-noticias{display: flex;}
+  img{width: 300px; height: 300px;}  
+}
+@media screen and (min-width: 1440px) and (max-width:1919px) {
+  .secao-calendario .table {grid-template-columns: 1fr 1fr 1fr;}
+  .secao-calendario .table .cronograma{width: 450px;}
+  .secao-times ul li {width: 450px;margin-bottom: 20px;}
+  .secao-times ul{justify-content:space-around;}
+  .secao-noticias{display: flex;}
+  img{width: 300px; height: 300px;}
+}
+@media screen and (min-width: 1024px) and (max-width:1439px) {
+  .secao-calendario .table{grid-template-columns: 1fr 1fr;}
+  .secao-noticias{display: flex;}
+}
+@media screen and (min-width:768px) and (max-width: 960px) {
+  .secao-calendario .table {display:grid; grid-template-columns: 1fr 1fr;}
+  img{width: 300px; height: 300px;}
+  .secao-noticias{display: grid; grid-template-columns: 1fr 1fr;}
+}
+@media screen and (max-width: 430px) {
+  .secao-calendario .table{grid-template-columns: 1fr;}
+  .secao-calendario .table .cronograma{width: 20rem; font-size: 1rem; margin: 10px auto;}
+}

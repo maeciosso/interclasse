@@ -1,0 +1,87 @@
+/* Redefinição de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos globais */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0073b7;
+  }
+  
+  a:hover {
+    color: #004d7a;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos do header */
+  header {
+    background-color: #0073b7;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    height: 140px;
+  }
+  
+  header h1 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  header a button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #337bc2;
+    float: right;
+    color: aliceblue;
+  }
+  header svg{
+    float: left;
+  }
+  footer{background-color: #0073b7;}
+
+  main{
+    border: 1px dotted #333;
+    width: 90%;
+    height: 400px;
+    margin: 20px auto;
+  }
+  main div{
+    border: 1px solid #333;
+    width: 95%;
+    height: 95%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  p:nth-child(1){
+    margin-top: 20px;
+  }
+  p{
+    width: 90%;
+    margin: auto;
+  }

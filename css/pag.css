@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles for mobile */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #0073b7;
+}
+
+a:hover {
+  color: #004d7a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Header */
+header {
+  background-color: #0073b7;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  height: 130px;
+}
+
+header h1 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  float: right;
+}
+header svg{
+  float: left;
+}
+
+header button {
+  float: right;
+  width: 80px;
+  font-size: 16px;
+  height: 30px;
+  background-color: #338dc2;
+  border-radius: 10px;
+}
+
+/* Main content */
+main {
+  width: 100%;
+}
+
+.pag {
+  width: fit-content;
+  margin: 20px auto;
+  text-align: center;
+}
+.pag p{text-align: center;}
+
+.pag .times {
+  display: grid;
+  position: relative; right: 20px;
+  grid-template-columns: repeat(1, 1fr); /* Change to 1 column for mobile */
+}
+
+table {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin: 20px;
+  font-size: 16px;
+  width: 100%; /* Adapt width for mobile */
+  text-align: center;
+}
+
+th, td {
+  border-bottom: 1px solid #333;
+}
+
+p {
+  width: fit-content;
+  text-align: center;
+}
+
+.data {
+  width: 100%; /* Adapt width for mobile */
+  height: 300px;
+  text-align: center;
+  margin: auto;
+  outline: 2px solid #3333337a;
+}
+.data p {
+  width:fit-content;
+}
+
+/* Media queries for larger screens */
+@media screen and (min-width: 1440px){
+  /* Apply specific styles for tablets and desktops here */
+  .pag .times {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 0 0 80px;
+    width: fit-content;
+  }
+
+  table {
+    width: 300px;
+  }
+
+  .data {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Apply specific styles for tablets and desktops here */
+  .pag .times {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    width: fit-content;
+  }
+
+  table {
+    width: 300px;
+  }
+
+  .data {
+    width: 300px;
+  }
+}
